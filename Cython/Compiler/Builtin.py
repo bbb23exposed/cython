@@ -230,7 +230,7 @@ builtin_function_table = [
                     is_strict_signature=True, nogil=True),
     BuiltinFunction('round',        "d",    "d",     "round",
                     is_strict_signature=True, nogil=True),
-    BuiltinFunction('round',        "ld",    "ld",     "roundl",
+    BuiltinFunction('round',        None,    None,     "roundl",
                 func_type = PyrexTypes.CFuncType(
                     PyrexTypes.c_longdouble_type, [
                         PyrexTypes.CFuncTypeArg("arg", PyrexTypes.c_longdouble_type, None)
