@@ -1,6 +1,12 @@
 # mode: run
 
-cdef float test_round_float(float value):
+import cython
+
+def test_round_float(value: cython.float):
+    """
+    >>> test_round_float(3.14)
+    3.0
+    """
     return round(value)
 
 cdef double test_round_double(double value):
